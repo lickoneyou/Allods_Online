@@ -1,6 +1,7 @@
 html {
   width: 1922px;
   margin: 0 auto;
+  height: auto;
 }
 
 .bg {
@@ -14,15 +15,14 @@ h2 {
   font-weight: 700;
 }
 
-p {
+p,
+button {
   color: #fff;
   font-family: Roboto;
 }
 
 header {
   background-image: url('./assets/bg/header/headerbg.png');
-  background-clip: content-box;
-  background-repeat: no-repeat;
   width: 1922px;
   height: 892px;
   position: relative;
@@ -118,9 +118,150 @@ header {
   text-align: center;
   font-family: Roboto Condensed;
   font-size: 42px;
+  user-select: none;
 }
 
 .logoTitle > p {
   font-size: 20px;
   margin-top: 17px;
+  user-select: none;
+}
+
+/* kit */
+
+.kit {
+  position: relative;
+  width: 1922px;
+  height: 1060px;
+  background-image: url('./assets/bg/kit/background\ wall.png');
+  background-size: cover;
+}
+
+.kit__layer1 {
+  background-image: url('./assets/bg/kit/BLUE\ GLOW\ 1.png');
+  background-position: bottom;
+}
+
+.kitWrapper {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding-top: 32px;
+  padding-right: 330px;
+  padding-left: 360px;
+}
+
+.kitPet {
+  position: relative;
+}
+
+.kitCircle {
+  width: 680px;
+  height: 686px;
+  border-radius: 686px;
+  border: 1px solid #000;
+  opacity: 0.2;
+  background: #416df4;
+  mix-blend-mode: lighten;
+  filter: blur(100px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.kitDescription {
+  padding-top: 26px;
+}
+
+.kitWrapper h2 {
+  color: #416df4;
+  font-size: 30px;
+  margin-bottom: 45px;
+}
+
+.kitVito {
+  background-image: url('./assets/Vito\ 1.png');
+  width: 441px;
+  height: 891px;
+  position: relative;
+  z-index: 1;
+}
+
+.servers {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 9px;
+}
+
+.servers > div {
+  border: 1px solid rgba(103, 29, 0, 0.48);
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.servers > div:first-child {
+  margin-right: 13px;
+}
+
+.servers > div > p {
+  color: #671d00;
+  font-size: 12px;
+  text-align: center;
+  padding: 4px 9px;
+}
+
+.loot {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(103, 29, 0, 0.48);
+  background: rgba(0, 0, 0, 0.55);
+  width: 632px;
+  height: 74px;
+  padding: 5px 0 4px 6px;
+}
+
+.lootWrapper {
+  margin-bottom: 22px;
+}
+
+.loot > div {
+  display: flex;
+  align-items: center;
+}
+
+.loot img {
+  margin-right: 20px;
+}
+
+.kitBox {
+  display: flex;
+}
+
+.boxImg {
+  background-image: url('./assets/box.png');
+  width: 266px;
+  height: 323px;
+}
+
+.purchase {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 58px;
+}
+
+.purchase p {
+  font-size: 50px;
+}
+
+.purchase button {
+  border-radius: 7px;
+  background: #fcff00;
+  color: #000;
+  font-size: 16px;
+  padding: 11px 38px;
+  margin-top: 11px;
 }

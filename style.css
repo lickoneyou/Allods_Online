@@ -1,0 +1,126 @@
+html {
+  width: 1922px;
+  margin: 0 auto;
+}
+
+.bg {
+  background-clip: content-box;
+  background-repeat: no-repeat;
+}
+
+h1,
+h2 {
+  font-family: Roboto Condensed;
+  font-weight: 700;
+}
+
+p {
+  color: #fff;
+  font-family: Roboto;
+}
+
+header {
+  background-image: url('./assets/bg/header/headerbg.png');
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  width: 1922px;
+  height: 892px;
+  position: relative;
+  overflow: hidden;
+}
+
+.layers {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.layer1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.layer1_left {
+  background-image: url('./assets/bg/header/Lleft.png');
+  background-position: left;
+  width: 100%;
+}
+
+.layer1_right {
+  background-image: url('./assets/bg/header/Lright.png');
+  background-position: right;
+  width: 100%;
+}
+
+.layer2 {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.layer2_left {
+  background-image: url('./assets/bg/header/MafiaCostume_2022left.png');
+  background-position: bottom left;
+  width: 100%;
+}
+
+.layer2_right {
+  background-image: url('./assets/bg/header/MafiaCostume_2022right.png');
+  background-position: 259px bottom;
+  width: 100%;
+}
+
+.layer3 {
+  background-image: url('./assets/bg/header/Lbottom.png');
+  background-position: bottom;
+  z-index: 2;
+}
+
+.layer4 {
+  background-image: url('./assets/bg/header/BLUE\ GLOW\ 3.png');
+  background-position: bottom;
+  z-index: 3;
+}
+
+.layer5 {
+  background-image: url('./assets/bg/header/glow\ 1.png');
+  background-position: center;
+  mix-blend-mode: screen;
+  z-index: 3;
+}
+
+.layer6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 64px;
+  z-index: 4;
+}
+
+.logo {
+  background-image: url('./assets/logo.png');
+  width: 376px;
+  height: 285px;
+}
+
+.box {
+  position: absolute;
+  top: 26%;
+  background-image: url('./assets/boxes.png');
+  width: 766px;
+  height: 525px;
+  margin-right: 53px;
+}
+
+.logoTitle > h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto Condensed;
+  font-size: 42px;
+}
+
+.logoTitle > p {
+  font-size: 20px;
+  margin-top: 17px;
+}
